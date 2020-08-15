@@ -1,0 +1,153 @@
+body
+{
+	font-family:  Verdana,Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+h3 
+{
+    font-size: 16px;
+	font-weight:bold;
+	color:#f8f5f1;
+	background-color:#f9af3f;
+	text-align:center;
+}
+/*sanpham duoc su dung de hien thi:
+    -So luong san pham trong gio hang(Default.aspx)
+    -Tieu de cua cac truong hien thi trong bang chi tiet sp(chitietsanpham.aspx)
+*/
+.sanpham{
+	color:Red; 
+}
+/*su dung de hien thi gia tien cua mon hang*/
+.giathanh{
+	font-size:15px;
+	color:red
+}
+/*chu dung cho ten cua cong ty trong phan gioi thieu,huong dan*/
+.chu {
+	font-size: 12px;
+	font-weight:bold;
+	color:#996633;
+}
+/*chucam su dung de hien thi tieu de cot trong gio hang*/
+.chucam{
+	font-size: 13px;
+	font-weight:bold;
+	color:#f8f5f1;
+	background-color:#f9af3f;
+	text-align:center;
+}
+/*cell su dung cho cac o textbox,hop select o cac form*/
+.cell{
+    text-align: left;
+    font-size: 13px;
+    font-family: "Roboto Slab", Sans-serif;
+    color: #393939;
+}
+
+/*buoc duoc su dung cho phan huong dan*/
+.buoc{
+	font-size:16px;
+	font-weight:bold;
+	color:#9900CC;
+}
+/*tuabanner su dung de lam nen cho tieu de cua form:
+    -Dang ky
+    -Dang nhap
+    -Lien he
+    ...
+*/
+.tuabanner{
+	font-size:20px;
+	color:#FFFFFF;
+}
+/*Table su dung de tao bang cho cac form dangky,dangnhap...*/
+.Table{
+	border:solid medium;	
+	border-top:none;
+}
+/*Table_sp duoc su dung de hien thi cac bang:
+    -Bang chi tiet san pham
+    -Bang ket qua tim kiem
+    -Bang thong tin ca nhan
+*/
+.Table_sp{
+	border:1px solid thin;
+	border-color:#ebd789;
+	border-collapse:collapse
+}
+/*menu dung cho cac lien ket tren menu ngang*/
+.menu
+{
+    cursor:pointer;
+    text-decoration: none;
+    font-size:10px;
+    font-family:Verdana,Arial;
+    font-weight:bold;
+    color:#996633;
+}
+.menu:hover
+{
+    cursor:pointer;
+    text-decoration: none;
+	color:#0054E3;
+}
+/*menungang dung lam nen cho cac lien ket tren menu ngang*/
+.menungang 
+{
+    background-color:orange;
+    background-position:left;
+    background-repeat:no-repeat;
+    text-align:center;
+    vertical-align:middle;
+    width:150px;
+    height:20px;
+}
+/*footer dung de cho cac lien ket o thanh footer*/
+.footer
+{
+    cursor:pointer;
+    text-decoration: none;
+    font-size:11px;
+    font-family:Verdana,Arial;
+    font-weight:bold;
+    color:black;
+ 
+}
+.footer:hover
+{
+    cursor:pointer;
+    text-decoration: none;
+	color:#FFFF00;
+}
+
+.khung {
+    width:250px;
+    height:300px;
+    border:1px solid blue;
+    text-align:center;
+}
+
+.btn {
+                border-radius: 2px;
+                border: 1px solid #8d8882;
+                color: #393939;
+                display: inline-block;
+                font-size: 12px;
+                padding: 5px 5px;
+                text-align: center;
+                text-transform: uppercase;
+                transition-property: color,border-color;
+                min-width: 40px;
+                text-decoration:none;
+                background-color:white;
+}
+
+.btn:hover {
+                border-color: #800040;
+                color: #800040;
+}

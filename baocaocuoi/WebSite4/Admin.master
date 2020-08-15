@@ -1,0 +1,125 @@
+﻿ 
+
+
+
+
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+<% 
+    if (Session["giohang"] == null)
+        Session["giohang"] = "0";
+    if (Session["sanpham"] == null)
+        Session["sanpham"] = "";
+    if (Session["sl"] == null)
+        Session["sl"] = "";
+%>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/tieude.css" rel="stylesheet" type="text/css"/> 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style9 {
+            width: 264px;
+            height: 45px;
+            text-align: center;
+        }   
+        .auto-style10 {
+            height: 25px;
+        }
+        .auto-style11 {
+            width: 345px;
+        }
+        .auto-style12 {
+            height: 40px;
+            width: 264px;
+        }
+         /*.nen {
+            background-image:url("images/background.jpg") ;
+            height: 650px;
+            background-size: cover;
+        }*/
+        
+        .auto-style13 {
+            height: 5px;
+            width: 264px;
+        }
+        
+        .auto-style14 {
+            text-align: left;
+        }
+        
+        </style>
+
+</head>
+<body>
+    <div class="nen">
+    <form id="form1" runat="server">
+        <table style="width:100%; height: 489px; margin-bottom: 12px;">
+            <tr>
+                <td class="auto-style9" style="background-color: #CCFFFF; font-weight: bold;">
+                    <asp:HyperLink ID="HyperLink6" runat="server" ImageUrl="~/icon/home.png" NavigateUrl="~/admin_home.aspx" ImageHeight="70px" ImageWidth="70px">HyperLink</asp:HyperLink></br> 
+                </td>
+
+                    
+                <td class="auto-style10" style="background-color: #CCFFFF">
+                    <table style="width:100%;">
+                        <tr>
+                            <td class="auto-style11" style="text-align: right">
+                                <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/images/icon_web.png" NavigateUrl="trangchu.aspx">Xem website</asp:HyperLink>
+                            </td>
+                            <td style="text-align: right">
+                                <asp:Label ID="Label1" runat="server">Xin chào Admin!</asp:Label>
+                                  <% 
+                                      if (Session["Admin"] != null)
+                                      {
+                                          string st = "<a class='menu' href='dangxuat.aspx'>Đăng xuất</a>";
+                                          Response.Write(st);
+                                      }
+                                      %>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td  class="auto-style13" style="background-color: #CCFFFF; color:brown; font-weight: bold;">
+                    Bảng Quản Trị Viên 
+
+                </td>
+                <td rowspan="5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <div class="auto-style14">
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12" style="background-color: #CCFFFF"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="QL_KhachHang.aspx">Quản lý khách hàng</asp:HyperLink></td>
+            </tr>
+            <tr>
+                <td class="auto-style12" style="background-color: #CCFFFF">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="QLDH.aspx">Quản lý đơn hàng</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12" style="background-color: #CCFFFF">
+                    <asp:HyperLink ID="hpl_qlsp" runat="server" NavigateUrl="QLSP.aspx">Quản lý sản phẩm</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12" style="background-color: #CCFFFF">
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/QLTK_admin.aspx">Quản lý tài khoản</asp:HyperLink>
+                </td>
+            </tr>
+            </table>
+        
+    </form>
+        </div>
+    
+</body>
+</html>
